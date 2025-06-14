@@ -10,5 +10,8 @@
 // Import the Hero Section block
 import './blocks/hero-section/edit';
 import './blocks/hero-section/style.scss';
+import './blocks/hero-section/editor.scss';
+// Import the Accordion block
 import './blocks/accordion/edit';
 import './blocks/accordion/style.scss';
+import './blocks/accordion/editor.scss';
