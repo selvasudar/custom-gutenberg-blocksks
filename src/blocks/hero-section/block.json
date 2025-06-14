@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/wp/trunk/block.json",
+  "apiVersion": 3,
+  "name": "cgb/hero-section",
+  "version": "1.0.0",
+  "title": "Hero Section",
+  "category": "design",
+  "icon": "cover-image",
+  "description": "A full-width hero section with a background image, title, and description.",
+  "keywords": ["hero", "cover", "image", "banner"],
+  "supports": {
+    "html": false,
+    "align": ["full", "wide"]
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": "h1",
+      "default": "Your Hero Title"
+    },
+    "description": {
+      "type": "string",
+      "source": "html",
+      "selector": "p",
+      "default": "Your hero description goes here. Click to edit."
+    },
+    "mediaId": {
+      "type": "number"
+    },
+    "mediaUrl": {
+      "type": "string",
+      "default": "https://placehold.co/1920x1080/4F46E5/FFFFFF?text=Upload+an+Image"
+    }
+  },
+  "textdomain": "custom-gutenberg-blocks"
+}

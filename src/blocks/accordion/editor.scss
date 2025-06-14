@@ -1,0 +1,9 @@
+/**
+ * Accordion Block Styles (Editor Only)
+ */
+
+.wp-block-cgb-accordion {
+	.cgb-accordion-icon.is-open::after {
+		transform: translateX(-50%) rotate(90deg);
+	}
+}

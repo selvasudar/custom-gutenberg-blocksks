@@ -1,0 +1,83 @@
+/**
+ * Accordion Block Styles (Frontend and Editor)
+ */
+
+.cgb-accordion-item {
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	overflow: hidden;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.cgb-accordion-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px;
+		background-color: #f9f9f9;
+		cursor: pointer;
+		font-weight: 600;
+		list-style: none; /* For <summary> element */
+		width: 100%;
+
+		&::-webkit-details-marker {
+			display: none; /* Hide default marker in Chrome/Safari */
+		}
+	}
+
+	.cgb-accordion-icon {
+		width: 1em;
+		height: 1em;
+		transition: transform 0.2s ease-in-out;
+		position: relative;
+		flex-shrink: 0;
+		margin-left: 15px;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			background-color: #333;
+			transition: transform 0.2s ease-in-out;
+			border-radius: 2px;
+		}
+
+		// Horizontal line
+		&::before {
+			width: 100%;
+			height: 2px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		// Vertical line
+		&::after {
+			width: 2px;
+			height: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	// When the details element is open, rotate the vertical line of the icon
+	&[open] > .cgb-accordion-title .cgb-accordion-icon::after {
+		transform: translateX(-50%) rotate(90deg);
+	}
+
+	.cgb-accordion-content {
+		padding: 15px;
+		border-top: 1px solid #ddd;
+		background-color: #fff;
+
+		> p:first-child {
+			margin-top: 0;
+		}
+
+		> p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

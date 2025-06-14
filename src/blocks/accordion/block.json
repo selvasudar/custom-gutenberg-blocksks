@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/wp/trunk/block.json",
+  "apiVersion": 3,
+  "name": "cgb/accordion",
+  "version": "1.0.0",
+  "title": "Accordion",
+  "category": "design",
+  "icon": "menu-alt",
+  "description": "An accordion item with a title and collapsible content area.",
+  "keywords": ["accordion", "toggle", "collapse", "faq"],
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": ".cgb-accordion-title-text",
+      "default": "Accordion Title"
+    },
+    "isOpenOnLoad": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "custom-gutenberg-blocks"
+}

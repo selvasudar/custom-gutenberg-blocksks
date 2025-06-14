@@ -1,0 +1,22 @@
+/**
+ * These styles are applied to the block *only* in the editor.
+ */
+
+.wp-block-cgb-hero-section {
+    // In the editor, ensure the block has a minimum height so it's easy to see.
+    min-height: 250px;
+
+    // Make placeholder text more visible in the editor
+    .block-editor-rich-text__editable[data-placeholder]:empty:before {
+        color: #ddd;
+        opacity: 1;
+    }
+
+    .hero-section-title {
+        // You can add specific styles for the title in the editor if needed
+    }
+
+    .hero-section-description {
+        // You can add specific styles for the description in the editor if needed
+    }
+}
