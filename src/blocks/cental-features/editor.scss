@@ -1,0 +1,22 @@
+// editor.scss
+.features-section {
+  text-align: center;
+  padding: 2rem;
+  background: #f9f9f9;
+
+  .features-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .features-description {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  .feature-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+}

@@ -15,3 +15,7 @@ import './blocks/hero-section/editor.scss';
 import './blocks/accordion/edit';
 import './blocks/accordion/style.scss';
 import './blocks/accordion/editor.scss';
+
+import './blocks/cental-features/edit';
+import './blocks/cental-features/style.scss';
+import './blocks/cental-features/editor.scss';
